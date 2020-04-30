@@ -1,0 +1,19 @@
+net: "./examples/warpctc_captcha/lstm_ctc_newsmall12_12_3fc_all_ft.prototxt"
+
+test_iter: 1000
+test_interval: 1000
+base_lr: 0.00001
+lr_policy: "step"
+gamma: 0.5
+stepsize: 5000
+display: 100
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+#snapshot_prefix: "./examples/warpctc_captcha/model/model_quantize_ft"
+snapshot_prefix: "/media1/csg/model/0821/model"
+solver_mode: GPU
+clip_gradients: 5000
+type: "Adam"
+#delta: 1e-6
